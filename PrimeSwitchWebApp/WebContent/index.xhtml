@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <title>Sunnet Engineers</title>
+        </f:facet>
+    </h:head>
+
+    <h:body  style="background-color:#B5D3A5">
+
+        <p:layout fullPage="true">
+
+            <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
+                <h2>Sunnet Engineers Switchboard</h2>
+            </p:layoutUnit>
+
+            <p:layoutUnit position="east" size="50" closable="true" collapsible="true">
+              
+            </p:layoutUnit>
+
+            <p:layoutUnit position="west" size="220" header="Menu Options" collapsible="true">
+                <p:menu>
+<!--                    <p:submenu label="Resources">-->
+                    <p:menuitem value="Add New Entry" url="create.xhtml" />
+                    <p:menuitem value="Update Entry" url="updatenew.xhtml" />
+                    <p:menuitem value="Delete" url="deleterecord.xhtml" />
+                    <p:menuitem value="View Data" url="data.xhtml" />
+                    <br/>
+                    <br/>
+                     <p:menuitem value="Home Page" url="index.xhtml" />
+<!--                    </p:submenu>-->
+
+                </p:menu>
+            </p:layoutUnit>
+
+           <p:layoutUnit position="center">
+                    <h3>Click on a form to complete!</h3>
+                    <h:form>
+                    
+                    <h:panelGrid columns="4">
+			
+<p:commandButton outcome="productDetail" value="Daily Activity Log" action="trainingrecord.xhtml" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Training Report   " icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Leave Report      " icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Account Ownership Report" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Client Call Report" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton>
+<p:commandButton outcome="productDetail" value="Pre-PM Report     " icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="PM Report         " icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Site Logbook Report" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Firmware Report   " icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Infrastructure Documentation" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+    
+</p:commandButton>
+
+<p:commandButton outcome="productDetail" value="Project Completion Report" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Upgrade Activity Plan" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+</p:commandButton> 
+<p:commandButton outcome="productDetail" value="Sunnet Engineers list" icon="ui-icon-star">  
+    <f:param name="productId" value="10" />  
+    
+</p:commandButton>
+
+</h:panelGrid>
+
+</h:form>
+
+
+
+
+
+           </p:layoutUnit>
+                
+        </p:layout>
+
+    </h:body>
+</html>
+       
+       
